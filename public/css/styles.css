@@ -1,0 +1,114 @@
+/* Defaults */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  word-wrap: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0rem 25vw 1rem 25rem;
+}
+
+nav {
+  text-align: center;
+  font-style: italic;
+}
+
+/* Utils */
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Typography */
+
+.text-heading {
+  font-weight: 700;
+  font-size: 25px;
+  color: black;
+}
+
+.text-subheading {
+  font-weight: 500;
+  color: black;
+}
+
+.text-title {
+  font-weight: 400;
+  color: black;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 14px;
+  color: black;
+}
+
+.text-muted {
+  font-weight: 300;
+  color: #757575;
+  font-size: 14px;
+  margin-top: 0.25rem;
+}
+
+/* index.html */
+
+#stories {
+  display: grid;
+  row-gap: 1em;
+  grid-template-columns: 1fr;
+}
+
+.story {
+  display: grid;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+}
+
+#more {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-style: italic;
+  font-size: 14px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  text-decoration: none;
+}
+
+#more:hover {
+  cursor: pointer;
+}
+
+/* story.html */
+
+.comment {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  margin-bottom: 1rem;
+}
+
+.comment:nth-last-child(1) {
+  margin-bottom: 0.5rem; /* Reduce bottom margin for the last element of the list */
+}
+
+.comment-header {
+  display: grid;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5rem;
+  grid-template-columns: 1fr auto;
+}
+
+u[id*='-replies'] {
+  text-align: right !important;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    padding: 0rem 5vw 1rem 5vw;
+  }
+}
