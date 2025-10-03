@@ -1,0 +1,16 @@
+{
+  "name": "hacker-news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "start": "serve public",
+    "lint": "prettier --write ."
+  },
+  "devDependencies": {
+    "serve": "14.2.1"
+  },
+  "dependencies": {
+    "prettier": "3.0.3"
+  }
+}
